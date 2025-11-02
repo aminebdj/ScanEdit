@@ -455,7 +455,7 @@ class SceneOptimizer:
                 loss += sum(in_boundry_loss)
                 in_boundry_loss_item = sum(in_boundry_loss).item()
                 
-            # Distance preservation loss
+            # Group loss
             objects_centroids = torch.stack([pc_i.mean(dim=0) for pc_i in pc_out])
             curr_vecs = (objects_centroids[:, None, :] - objects_centroids[None, :, :])
             gt_vecs_norm = torch.norm(gt_vecs, dim=-1, keepdim=True)

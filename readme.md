@@ -22,8 +22,8 @@ SCANEDIT is a 3D scene editing framework that uses language models to understand
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/scanedit-inference.git
-cd scanedit-inference
+git clone https://github.com/aminebdj/ScanEdit
+cd ScanEdit
 
 # Run the installation script
 chmod +x install_environment.sh

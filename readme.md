@@ -20,8 +20,6 @@ SCANEDIT is a 3D scene editing framework that uses language models to understand
 ## 🚀 Quick Start
 
 ### Installation
-
-#### Option 1: Full Installation (Recommended)
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/scanedit-inference.git
@@ -33,26 +31,6 @@ chmod +x install_environment.sh
 
 # Activate the environment
 conda activate scanedit
-```
-
-#### Option 2: Quick Installation
-```bash
-chmod +x quick_install.sh
-./quick_install.sh
-conda activate scanedit
-```
-
-#### Option 3: Manual Installation
-```bash
-# Create environment from scratch
-conda create -n scanedit python=3.10 -y
-conda activate scanedit
-
-# Install PyTorch with CUDA
-pip install torch==2.4.1 torchvision==0.19.1 --index-url https://download.pytorch.org/whl/cu118
-
-# Install other dependencies
-pip install -r requirements.txt
 ```
 
 ### Set up API Key
@@ -80,7 +58,7 @@ python inference.py \
     --folder_name "results" \
     --output_dir "./outputs" \
     --verbose
-
+```
 
 ## 🔧 Arguments Reference
 
